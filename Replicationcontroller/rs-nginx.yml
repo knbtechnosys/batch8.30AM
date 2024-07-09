@@ -10,7 +10,7 @@ spec:
    template:                                     
      metadata:
        labels:
-          app: myonlineapp    # change to myonlineapp once and webserver once
+          app: webserver    # change to myonlineapp once and webserver once
      spec:
         containers:
         - name: myonlineapp-container
