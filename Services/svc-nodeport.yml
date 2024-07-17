@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vertex-svc
+  name:  myonlineapp-svc
   labels:
     app: myvertexapp
     version: 2.6.1
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 8080
+    nodePort: 32000
     protocol: TCP
   selector:
     app: myvertexapp
