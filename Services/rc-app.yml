@@ -6,16 +6,15 @@ spec:
    replicas: 3
    selector: 
      app: myvertexapp
-     version: 2.6.1
+     version: 2.6.2
    template:                                     
      metadata:
        labels:
           app: myvertexapp
-          version: 2.6.1
+          version: 2.6.2
      spec:
         containers:
         - name: myonlineapp-container
-          image: nbktechnosys/myjavaimage1dec22:1
+          image: nbktechnosys/myjavaimage1dec22:2
           ports:
           - containerPort: 8080 
-          
