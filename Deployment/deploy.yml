@@ -16,6 +16,6 @@ spec:
      spec:
        containers:
        - name: myjavaapp-container
-         image: nbktechnosys/myjavaimages2dec22:
+         image: nbktechnosys/myjavaimages2dec22:1
          ports:
          - containerPort: 8080
